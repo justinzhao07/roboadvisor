@@ -3,12 +3,15 @@
     <head>
         <title></title>
     </head>
-    <body>
+    <body style="background-color:rgb(89, 150, 107);">
+    
         <script src="script.js"> </script>
         
-        <h1>
-            Robo-Advisor
-        </h2>
+        <h1 style="text-align:center; font-size:80px;">
+            Projected S&P 500 Returns
+        </h1>
+
+        <h2 style="text-align:center">
 
         <p>
             Portfolio Value($):
@@ -20,19 +23,48 @@
             <input type="text" id="periodInput">
         </p>
 
-        <p>
+        <!-- <p>
             Risk Tolerance(1 to 5):
             <input type="text" id="riskInput">
+        </p> -->
+
+        <hr style = border-color:black;>
+
+        <p>
+            <div id="output" style="text-align:center; color:blue;"> </div>
         </p>
 
         <p>
-            <div id="output"> </div>
+            <div id="regressionEquation"> </div>
         </p>
+
+        <p>
+            <div id="projection" style="color:rgb(136, 8, 8);"> </div>
+        </p>
+
         <button onclick="run()"> Enter </button>
 
-        <p>
-            
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <p style="text-align:center; font-size:14px;">
+            Disclaimer: Past performance may not be indicative of future results!
+            <br>
+            Future calculations are based on a linear regression of data from 1928 to 2022
+            <br>
+            Source: macrotrends.net
         </p>
+
+    </h2>
 
     </body>
 
