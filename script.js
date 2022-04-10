@@ -36,6 +36,6 @@ function findReturns(portfolio, period){
     for(i = startingYear; i < 94; i++){
         value *= (1 + returns[i]);
     }
-    return '$' + value;
+    return '$' + value.toFixed(2);
 }
 
